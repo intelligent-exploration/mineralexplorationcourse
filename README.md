@@ -1,0 +1,2 @@
+# mineralexplorationcourse
+Mineral Exploration Course
