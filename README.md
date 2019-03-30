@@ -5,6 +5,46 @@ Modern day exploration requires a versatile skill-set, including being able to a
 The prac classes are compulsory. And the assessment will be a write-up of one of the pracs. More details given in the assessment section.
 
 # Environemnt installation and setup
+## Download the data
+Download this repo: https://github.com/intelligent-exploration/mineralexplorationcourse/archive/master.zip
+Download the bigger datasets that are needed for week 10.
+
+## Set up the python environemnt via Docker
+Pull it the [docker hub](https://cloud.docker.com/u/nbutter/repository/docker/nbutter/pyforgeo) or build the [Dockerfile](Docker_details/Dockerfile) and run!
+
+or....
+
+## Create the python environemnt locally
+We need two different environemts. One is particularly needed for pyGplates. We are using the conda package manager. Conda is installed on the computers in the lab. If you wish you use your own computer you can download it from https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh 
+
+### python 3 environment
+```
+conda create -n pyGEOL scipy=1.2 scikit-learn=0.20 matplotlib=3.0 pyshp=2.0 numpy=1.16 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4
+```
+
+### python 2 pyGplates environment 
+***python 2 specifically is required for the week 10 notebook only because of the pygplates dependency.***
+
+Note Windows Users will need to set
+```
+set CONDA_FORCE_32BIT=1
+```
+Then make a conda environemnt
+```
+conda create -n py2GEOL python=2.7 scipy=1.2 scikit-learn=0.20 matplotlib=2.0 pyshp=1.2 numpy=1.15 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4
+```
+
+Add Python to your Python Path in whatever environemnt you are using 
+
+From within Python via e.g.:
+```
+import sys
+sys.path.append("C:\pygplates_rev12_python27_win32")
+import pygplates
+```
+
+
+
 
 # Week 6
 This will be a hands-on programming intro. You will learn the basics of coding and Python. If you have experience using command line or some programming language (e.g. Matlab, C++) then you should find this straight-forward. If you have never programmed before, great! This will be the beginning of a great relationship with getting data to do what you want!
@@ -52,44 +92,6 @@ This is an in-depth exploration through linking Week7 and Week 9. This notebook 
 
 2) 10%. Choose one of the datasets and key figures from the workbooks of week 7, 8, or 9, to write up as a full paper-style report. This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the jupyter notebook environement. This is due at the start of Week 10 prac, i.e. Thursday 1pm.
 
-
-# Environment installation 
-
-## Create the python environemnt we will be using
-We need two different environemts. One is particularly needed for pyGplates. We are using the conda package manager. Conda is installed on the computers in the lab. If you wish you use your own computer you can download it from https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh 
-
-### python 3 environment
-```
-conda create -n pyGEOL scipy=1.2 scikit-learn=0.20 matplotlib=3.0 pyshp=2.0 numpy=1.16 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4
-```
-
-### pyGplates environment 
-***python 2 specifically is required for the week 10 notebook only because of the pygplates dependency.***
-```
-conda create -n py2GEOL python=2.7 scipy=1.2 scikit-learn=0.20 matplotlib=2.0 pyshp=1.2 numpy=1.15 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4
-```
-
-Download this repo: https://github.com/intelligent-exploration/mineralexplorationcourse/archive/master.zip
-
-Add Python to your Python Path in whatever environemnt you are using 
-
-From within Python via e.g.:
-```
-import sys
-sys.path.append("C:\pygplates_rev12_python27_win32")
-import pygplates
-```
-
-Note Windows Users will need to set
-set CONDA_FORCE_32BIT=1
-
-
-### windows installation
-https://www.youtube.com/watch?v=dX2-V2BocqQ
-### mac installation
-https://www.youtube.com/watch?v=YYXdXT2l-Gg
-### Linux installation
-https://www.youtube.com/watch?v=LwORmcaI69w
 
 
  
