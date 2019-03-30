@@ -1,8 +1,8 @@
 # mineralexplorationcourse
-Mineral Exploration Course
+Mineral Exploration at USyd
 
 
-#getting started
+## getting started
 
 Videos 
 
@@ -19,19 +19,19 @@ https://www.youtube.com/watch?v=dX2-V2BocqQ
  
 
 
-# online programming tutorials and example (covered week 6)
+## online programming tutorials and examples
  
 
 https://snakify.org/en/lessons/print_input_numbers/
 https://www.geeksforgeeks.org/python-programming-examples/
 
-# online python compiler 
+## online python compiler 
 https://repl.it/repls
 
 
-#installation 
+## installation 
 
-## Create the python environemnt we will be using
+### Create the python environemnt we will be using
 We need two different environemts. One is particularly needed for pyGplates.
 
 ### python 3 environment
