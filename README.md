@@ -1,5 +1,5 @@
 # GEOL3888 Economic Geology
-This repository comprises the work required for Prac classes from Week 6, 7, 8, 9, and 10.
+This repository comprises the work required for Prac classes from Week 6, 7, 8, and 9.
 Modern day exploration requires a versatile skill-set, including being able to analyse, visualise and interpret data. This section of the course should give you hard-skills in the Python programming language. Plus you will learn about Machine Learning, Plate Tectonic Reconstructions, all while using specific Python packages (numpy, scipy, scikit-learn, matplotlib, cartopy, pygplates, etc), and a few other data and research tools and environemnts (e.g. Git, GPlates, databases, Docker containers).
 
 The prac classes are compulsory. And the assessment will be a write-up of one of the pracs. More details given in the assessment section.
@@ -76,21 +76,20 @@ https://repl.it/repls
 A quick Python refresher leading into visualising geo-spatial data.
 * [An Introduction to Python for GIS](Week7/Intro_Python_Geo.ipynb)
 
-# Week 8
-This lesson will explore some new Python liraries and advanced features of Python data manipulation on various types of data.
+Then a deeper lesson exploring some new Python liraries and advanced features of Python data manipulation on various types of data.
 * [Python with shapefiles and pandas](Week7/PandasExamples.ipynb)
 
-# Week 9
+# Week 8
 We will use Python to perform machine learning on a well-consturcted dataset 
 * [Machine Learning with Python for Geoscience](Week8/ML_Geo.ipynb)
 
-# Week 10
-This is an in-depth exploration through linking Week7 and Week 9. This notebook will teach you how to to create and manipulate data, use python from outside of Jupyter (i.e. normal python), and to use bespoke Python packages (pygplates and build-your-own). This task can be expanded to your full project assessment if chosen.
+# Week 9
+This is an in-depth exploration through linking some of the earlier workflows. This notebook will teach you how to to create and manipulate data, use python from outside of Jupyter (i.e. normal python), and to use bespoke Python packages (pygplates and build-your-own). This task can be expanded to your full project assessment if chosen.
 
 # Assessment
-1) Pass/Fail. The 3 notebooks from week 7, 8, and 9 each contain a specific assessment at the end. Complete the task and show your tutor. 
+1) Pass/Fail. The 3 notebooks from week 7 and 8 each contain a specific assessment at the end. Complete the task and show your tutor. 
 
-2) 10%. Choose one of the datasets and key figures from the workbooks of week 7, 8, or 9, to write up as a full paper-style report. This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the jupyter notebook environement. This is due at the start of Week 10 prac, i.e. Thursday 1pm.
+2) 10%. Choose one of the datasets and key figures from the workbooks of week 7 and 8, to write up as a full paper-style report. This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the jupyter notebook environement. This is due at the start of Week 10 prac, i.e. Thursday May 9, 2019 1pm.
 
 
 
