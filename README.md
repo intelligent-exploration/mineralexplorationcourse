@@ -4,7 +4,7 @@ Modern day exploration requires a versatile skill-set, including being able to a
 
 The prac classes are compulsory. And the assessment will be a write-up of one of the pracs. More details given in the assessment section.
 
-# Environemnt installation and setup
+# Environment installation and setup
 
 Download this repo: ht which contains all the small datasets and the codes/notebooks we will be using: https://github.com/intelligent-exploration/mineralexplorationcourse/archive/master.zip
 
