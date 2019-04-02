@@ -6,10 +6,9 @@ The prac classes are compulsory. And the assessment will be a write-up of one of
 
 # Environment installation and setup
 
-Download this repo: ht which contains all the small datasets and the codes/notebooks we will be using: https://github.com/intelligent-exploration/mineralexplorationcourse/archive/master.zip
+Download this repo which contains all the small datasets and the codes/notebooks we will be using: https://github.com/intelligent-exploration/mineralexplorationcourse/archive/master.zip
 
-Next, download the bigger datasets that are needed for some of the examples and exercises:
-***UPLOAD data to dropbox/host?***
+There are a few additional datasets that will be needed for some of the examples and exercises. Download them as instructed in the notes, but mostly they can all be found at https://www.dropbox.com/sh/mhvss5491nij1sb/AABC4VkGNkU4A1Ej5gusk3BFa?dl=0
 
 ## Set up the python environment via Docker
 Pull it from [docker hub](https://cloud.docker.com/u/nbutter/repository/docker/nbutter/pyforgeo) or build the [Dockerfile](Docker_details/Dockerfile) and run!
