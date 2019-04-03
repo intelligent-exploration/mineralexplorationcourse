@@ -111,4 +111,4 @@ This is an in-depth exploration linking some of the earlier workflows. This note
 # Assessment
 1) Pass/Fail. The 3 notebooks from week 7 and 8 each contain a specific assessment at the end. Complete the task and show your tutor. 
 
-2) 10%. Choose one of the datasets and key figures from the workbooks of week 7 and 8, to write up as a full paper-style report. This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the Jupyter notebook environment. This is due at the start of Week 10 prac, i.e. Thursday May 9, 2019 1pm.
+2) 10%. Choose one of the datasets and key figures from the workbooks of week 7 and 8 to write up as a full paper-style report. This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the Jupyter notebook environment. This is due at the start of the Week 9 lecture, i.e. Thursday May 2, 2019 10am.
