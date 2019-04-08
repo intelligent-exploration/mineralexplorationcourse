@@ -104,7 +104,6 @@ This creates three datasets (in the python 'pickle' file format) which contain t
 Open up Muller_copper_prob.ipynb in a jupyter notebook and continue the intereactive analysis in there.
 
 
-
 ## Additional instructions to create different datasets.
 
 This analysis can be done with any combination of rotation files and plate polygons. To create the initial set use these instructions.
