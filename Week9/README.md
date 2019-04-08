@@ -15,18 +15,18 @@ Unzip the download into the Week 9 folder. The Week 9 Folder should contain the 
 
 **Muller_gplates** - Plate model topologies and rotation files.
 
+**Muller_convergence** - Empty folder to be filled with kinematic subStats files.
+
 **CopperDeposits** - A shapefile of copper deposits to be used as a coregistration dataset
 
 ### Python codes/scripts
 **convergence.py** - python script that calculates convergence rates for a particular plate model. 
 
-**coregloop.py** - python script to take a shapefile and "coregister" the points with some other datasets
+**coregLoop.py** - python script to take a shapefile and "coregister" the points with some other datasets
 
 **Muller_copper_prob.ipynb** - a python noebook that steps through the machine learning process.
 
 **Utils_coreg.py** - Some additional tools and functions called in the main scripts.
-
-All are these are in this Repository in the /Week9 folder.
 
 
 ## Python environemnt 
@@ -43,22 +43,29 @@ Install pygplates beta-revision-12
 https://sourceforge.net/projects/gplates/files/pygplates/beta-revision-12/
 
 
-
 Alternatively you can also use the [Docker container](https://hub.docker.com/r/nbutter/pyforgeo) if that is easier!
 ```
 docker pull nbutter/pyforgeo
 ```
 
-If using docker most commands below can be completed by prefixing the comands with this docker line:
+If using docker you can start a bash terminal:
 ```
-sudo docker run  -it --rm -v`pwd`:/workspace pyg /bin/bash -c "source activate py2GEOL && COMMAND-GOES-HERE"
+sudo docker run  -it --rm -v`pwd`:/workspace pyg /bin/bash 
+source activate py2GEOL 
+MORE-COMMAND-GO-HERE
+```
+
+Or activate a Jupyter environment with:
+```
+sudo docker run  -p 8888:8888 -it --rm -v`pwd`:/workspace pyg /bin/bash -c "source activate py2GEOL && jupyter notebook --allow-root --ip=0.0.0.0 --no-browser"
+
 ```
 
 
 
 ## Step 1, get plate kinematic data
 
-Run the ***convergence.py*** script from a bash terminal shell. This script calculates convergence rates and other kinemtics about plate model along the subduction boundaries. To run this script you need to specify a rotation file, left- and right-handed subduction zone topology files, a closed plate polygon file, and a time. We want to calculate kinematic data for the entire history of the plate model, so we can do this in a small bash script:
+Run the ***convergence.py*** script from a bash terminal shell. This script calculates convergence rates and other kinemtics about the plate model along the subduction boundaries. To run this script you need to specify a rotation file, left- and right-handed subduction zone topology files, a closed plate polygon file, and a time. We want to calculate kinematic data for the entire history of the plate model, so we can do this in a small bash script:
 
 ```
 cd Week9/
@@ -66,14 +73,14 @@ cd Week9/
 for age in {0..230}; do echo ${age};  python convergence.py Muller_gplates/Global_EarthByte_230-0Ma_GK07_AREPS.rot Muller_export/topology_subduction_boundaries_sL_${age}.00Ma.shp Muller_export/topology_subduction_boundaries_sR_${age}.00Ma.shp Muller_export/topology_platepolygons_${age}.00Ma.shp ${age}; done
 ```
 
-This will create a bunch of files in called ***subStats_XX.csv*** that contain the statistcs of the subduction zones (i.e. the kinemtatic data). See the comments in ***convergence.py*** to see exactly what is in output. These will be dumped in the top-level directory, so let's move them to a folder:
+This will create a bunch of files in called ***subStats_XX.csv*** that contain the statistcs of the subduction zones (i.e. the kinemtatic data). See the comments in ***convergence.py*** to see exactly what is output. These will be dumped in the top-level directory, so let's move them to a folder:
 ```
 mv subStats*.csv Muller_convergence/
 ```
 
 ## Step 2, coregister the kinematic data with ore deposit data
 
-The folder ***CopperDeposits*** contains a shapefile ***XYBer14_t2_ANDES.shp*** with a set up known copper deposits in the Andes. These are currently just points on a map with a formation age associated with them. Our ultimate goal is to identify what kind of tectonomagmatic environemnts are associated with the formation of these ore deposits, to begin to do this we first must link age-coded tectonomagmatic properties with our age-coded ore deposits. We can use the script ***coregLoop.py*** to achieve this!
+The folder ***CopperDeposits*** contains a shapefile ***XYBer14_t2_ANDES.shp*** with a set of known copper deposits in the Andes. These are currently just points on a map with a formation age associated with them. Our ultimate goal is to identify what kind of tectonomagmatic environemnts are associated with the formation of these ore deposits, to begin to do this we first must link age-coded tectonomagmatic properties with our age-coded ore deposits. We can use the script ***coregLoop.py*** to achieve this!
 
 Run the script coregLoop.py
 
@@ -82,7 +89,7 @@ Make sure all the paths to the various files are correct in the script. Then run
 python coregLoop.py
 ```
 
-This creates three datasets (in the python 'pickle' file format) that we can have enough data in them to perform some machine learning on:
+This creates three datasets (in the python 'pickle' file format) which contain the most of the data needed to perform some machine learning on:
 
 
 ***Muller_Bertrand_coregistered.pkl*** contains the full set of copper-deposits and their associated tectono-magmatic properites.
@@ -100,7 +107,7 @@ Open up Muller_copper_prob.ipynb in a jupyter notebook and continue the intereac
 
 ## Additional instructions to create different datasets.
 
-This analysis can be done with any combination of rotation files plate polygons. To create the initial set use these instructions.
+This analysis can be done with any combination of rotation files and plate polygons. To create the initial set use these instructions.
 
 ### Load the Muller et al. 2016 rotation and topology files into GPlates and Export subduction topologies, as outlined in "convergence.py":
 
