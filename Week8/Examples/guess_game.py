@@ -4,7 +4,7 @@
 A Python program  
 
 '''
-
+import numpy as np 
 
 
 import random
@@ -17,9 +17,57 @@ def area_circle(radius):
 
   return area 
 
-def sum_lists():
+def numpy_lists():
 
-  a = [[1, 12, 3], [51, 6, 17], [7, 18, 9]]
+ x = np.zeros(15)
+ y = np.ones(15)
+ z = x + y
+
+ k = y * 10
+
+ '''print(x)
+ print(y)
+ print (z)
+ print(k)'''
+
+ magic = np.random.rand(3,4)
+ np.save('mymagic.txt', magic )
+
+ #magic_load = np.load('mymagic.csv')
+
+ magic_three = np.random.rand(3,4,2)
+ # homework, write a function for summing 3D magic
+ magic_one = np.random.rand(10)
+
+ #print(magic)
+ #print(magic_one)
+ print(magic_three)
+ print(magic.shape)
+
+ magic_sum = sum_numpy(magic)
+ print( magic_sum, ' is magic sum')
+
+ 
+
+def sum_3D(a):
+  print('homework')
+
+def sum_numpy(a):
+
+  sum = 0
+  
+  for x in range(a.shape[0]):
+    for y in range(a.shape[1]):
+        print(x, y, ' *' , a[x][y] )
+        sum = sum + a[x][y]
+  return sum 
+    
+
+
+
+def sum_lists(a):
+
+  #a = [[1, 12, 3], [51, 6, 17], [7, 18, 9]]
   sum = 0
   
   for x in range(len(a)):
@@ -101,8 +149,12 @@ def main():
     #speed_function_two(speed)
 
  
+    x = [[1,2],[3,5]]
 
-    sum = sum_lists()
+    sum = sum_lists(x)
+
+    numpy_lists()
+
     print(sum, ' is sum')
 
 

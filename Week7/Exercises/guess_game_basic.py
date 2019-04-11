@@ -17,6 +17,19 @@ def area_circle(radius):
 
   return area 
 
+def sum_lists():
+
+  a = [[1, 12, 3], [51, 6, 17], [7, 18, 9]]
+  sum = 0
+  
+  for x in range(len(a)):
+    for y in range(len(a[x])):
+        print(x, y, ' *' , a[x][y] )
+        sum = sum + a[x][y]
+  return sum 
+    
+
+
 
 def speed_function_one(speed):
 
@@ -28,21 +41,24 @@ def speed_function_one(speed):
 
 def speed_function_two(speed):
 
-  
+   
+        
+    if speed < 80:
+      print " speed is ok"
 
-  if speed < 80:
-    print " speed is ok"
-  elif (speed >= 80) and (speed < 100):
-    base_fine = 200
-    speed_diff = speed - 80
-    extra_fine = speed_diff * 10
-    total_fine = extra_fine + base_fine 
-    print " fine of  ", total_fine
+    elif (speed >= 80) and (speed < 100):
+      base_fine = 200
+      speed_diff = speed - 80
+      extra_fine = speed_diff * 10
+      total_fine = extra_fine + base_fine 
+      print " fine of  ", total_fine
+    elif (speed >= 100) and (speed < 140):
+      print " fine of 600 AUD"
+    else:
+      print " time to go to prison. "
 
-  elif (speed >= 100) and (speed < 140):
-    print " fine of 600 AUD"
-  else:
-    print " time to go to prison. "
+   
+
 
 
 
@@ -79,10 +95,16 @@ def main():
 
     #print(area)
 
-    speed = int(input("Enter speed "))
+    #speed = int(input("Enter speed "))
     
 
-    speed_function_two(speed)
+    #speed_function_two(speed)
+
+ 
+
+    sum = sum_lists()
+    print(sum, ' is sum')
+
 
 
 
