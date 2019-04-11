@@ -21,6 +21,8 @@ def plot_examples():
   #plt.show()
   plt.savefig('x.png')
 
+  plt.clf() # make sure you have this in all plots
+
 def area_circle(radius):
 
   area = pi * radius * radius
@@ -41,10 +43,7 @@ def numpy_lists():
  print(k)'''
 
  magic = np.random.rand(3,4)
- 
- #magic_load = np.loadtxt('mymagic.csv')
-
-
+  
  magic_three = np.random.rand(3,4,2)
  # homework, write a function for summing 3D magic
  magic_one = np.random.rand(10)
@@ -60,7 +59,19 @@ def numpy_lists():
  
 
 def sum_3D(a):
-  print('homework')
+  print('homework - sum elements of 3d numpy array')
+
+  # use nested for loops
+
+  #https://www.ict.social/python/basics/multidimensional-lists-in-python
+
+
+
+
+
+
+
+
 
 def sum_numpy(a):
 
@@ -72,34 +83,39 @@ def sum_numpy(a):
         sum = sum + a[x][y]
   return sum 
 
-def numpy_design():
+def numpy_design(filename):
 
-  a = np.zeros((5,5))
+  #a = np.zeros((10,10))
 
-  b = a
-
-  print(a)
-
-  for x in range(1, b.shape[0], 2 ):
+  b = np.random.rand(10,10)
+ 
+  for x in range(1, b.shape[0]):
     for y in range(1, b.shape[1], 2):
         b[x][y] = y*x 
 
   double_mat =   b * 2
 
  #https://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html
-  np.savetxt('mymagic.txt', double_mat, delimiter = ' ',  fmt='%1.2f' )
+  np.savetxt(filename, double_mat, delimiter = ' ',  fmt='%1.2f' )
   np.savetxt('mymagic.csv', double_mat, delimiter = ',',  fmt='%1.2f' )
   np.savetxt('mymagic_fmt.csv', double_mat, delimiter = ',',  fmt='%1.5f' )
 
   #print(double_mat)
 
-def numpy_design():
+def load_file(filename):
 
  #https://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html
-  data_load = np.loadtxt('mymagic.txt')
+  data_load = np.loadtxt(filename)
 
   print(data_load, ' loaded data')
-  
+
+  plt.imshow(data_load, cmap='hot', interpolation='nearest')
+  plt.savefig('design_magic.png')
+
+  plt.clf() # make sure you have this in all plots
+
+  #https://matplotlib.org/gallery/images_contours_and_fields/image_annotated_heatmap.html
+ 
   
         
  
@@ -199,13 +215,15 @@ def main():
 
     print(sum, ' is sum')
 
+    filename = 'mymagic.txt' # filename to  output data and also read data later
 
 
-    numpy_design()
+
+    numpy_design(filename)
 
     plot_examples()
 
-    numpy_design()
+    load_file(filename)
 
 
 
