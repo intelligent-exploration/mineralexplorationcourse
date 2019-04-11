@@ -95,20 +95,31 @@ https://repl.it/repls
 
 
 # Week 7
-A Python introduction leading into visualising geo-spatial data.
-* [An Introduction to Python for GIS](Week7/Intro_Python_Geo.ipynb)
 
-Then a deeper lesson exploring some new Python libraries and advanced features of Python data manipulation on various types of data.
-* [Python with shapefiles and pandas](Week7/PandasExamples.ipynb)
+Python lists, 2d arrays and numpy arrays
+ https://www.machinelearningplus.com/python/numpy-tutorial-part1-array-python-examples/
+ https://www.tutorialspoint.com/numpy/index.htm
 
 # Week 8
-We will use Python to perform machine learning on a well-constructed dataset 
-* [Machine Learning with Python for Geoscience](Week8/ML_Geo.ipynb)
+A Python introduction leading into visualising geo-spatial data.
+* [An Introduction to Python for GIS](Week8/Intro_Python_Geo.ipynb)
+
+Then a deeper lesson exploring some new Python libraries and advanced features of Python data manipulation on various types of data.
+* [Python with shapefiles and pandas](Week8/PandasExamples.ipynb)
+
 
 # Week 9
+
+
+We will use Python to perform machine learning on a well-constructed dataset 
+* [Machine Learning with Python for Geoscience](Week9/ML_Geo.ipynb)
+
 This is an in-depth exploration linking some of the earlier workflows. This notebook will teach you how to to create and manipulate data, use python from outside of Jupyter (i.e. normal python), and to use bespoke Python packages (pygplates and build-your-own). This task can be expanded to your full project assessment if chosen.
 
+# Week 10
+
+
 # Assessment
-1) Pass/Fail. The 3 notebooks from week 7 and 8 each contain a specific assessment at the end. Complete the task and show your tutor. 
+1) Pass/Fail. The 3 notebooks from week 8 and 9  contain a specific assessment at the end. Complete the task and show your tutor. 
 
 2) 10%. Choose one of the datasets and key figures from the workbooks of week 7 and 8, to write up as a full paper-style report. This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the Jupyter notebook environment. This is due at the start of Week 10 prac, i.e. Thursday May 9, 2019 1pm.
