@@ -93,6 +93,10 @@ https://www.geeksforgeeks.org/python-programming-examples/
 ### online python compiler 
 https://repl.it/repls
 
+### class
+
+ * [Class exercise and examples ](Week6/exercise)
+
 
 # Week 7
 
@@ -101,6 +105,7 @@ Python lists, 2d arrays and numpy arrays
  * https://www.tutorialspoint.com/numpy/index.htm
  * https://matplotlib.org/tutorials/introductory/pyplot.html
  * https://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html 
+ * [Class exercise and examples ](Week7/exercise)
 
 # Week 8
 A Python introduction leading into visualising geo-spatial data.
