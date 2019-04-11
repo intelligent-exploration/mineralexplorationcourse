@@ -100,7 +100,7 @@ Python lists, 2d arrays and numpy arrays
  * https://www.machinelearningplus.com/python/numpy-tutorial-part1-array-python-examples/
  * https://www.tutorialspoint.com/numpy/index.htm
  * https://matplotlib.org/tutorials/introductory/pyplot.html
- * https://docs.scipy.org/doc/numpy/reference/generated/numpy.save.html
+ * https://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html 
 
 # Week 8
 A Python introduction leading into visualising geo-spatial data.

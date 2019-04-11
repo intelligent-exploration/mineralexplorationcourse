@@ -6,10 +6,20 @@ A Python program
 '''
 import numpy as np 
 
+import matplotlib.pyplot as plt
+
 
 import random
 
 pi = 3.14 # global variable 
+
+def plot_examples():
+  x = [1, 2, 3, 4]
+  #numpy_x = 
+  plt.plot(x)
+  plt.ylabel('some numbers')
+  #plt.show()
+  plt.savefig('x.png')
 
 def area_circle(radius):
 
@@ -31,9 +41,9 @@ def numpy_lists():
  print(k)'''
 
  magic = np.random.rand(3,4)
- np.save('mymagic.txt', magic )
+ 
+ #magic_load = np.loadtxt('mymagic.csv')
 
- #magic_load = np.load('mymagic.csv')
 
  magic_three = np.random.rand(3,4,2)
  # homework, write a function for summing 3D magic
@@ -61,6 +71,38 @@ def sum_numpy(a):
         print(x, y, ' *' , a[x][y] )
         sum = sum + a[x][y]
   return sum 
+
+def numpy_design():
+
+  a = np.zeros((5,5))
+
+  b = a
+
+  print(a)
+
+  for x in range(1, b.shape[0], 2 ):
+    for y in range(1, b.shape[1], 2):
+        b[x][y] = y*x 
+
+  double_mat =   b * 2
+
+ #https://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html
+  np.savetxt('mymagic.txt', double_mat, delimiter = ' ',  fmt='%1.2f' )
+  np.savetxt('mymagic.csv', double_mat, delimiter = ',',  fmt='%1.2f' )
+  np.savetxt('mymagic_fmt.csv', double_mat, delimiter = ',',  fmt='%1.5f' )
+
+  #print(double_mat)
+
+def numpy_design():
+
+ #https://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html
+  data_load = np.loadtxt('mymagic.txt')
+
+  print(data_load, ' loaded data')
+  
+  
+        
+ 
     
 
 
@@ -149,13 +191,21 @@ def main():
     #speed_function_two(speed)
 
  
-    x = [[1,2],[3,5]]
+    #x = [[1,2],[3,5]]
 
-    sum = sum_lists(x)
+    #sum = sum_lists(x)
 
     numpy_lists()
 
     print(sum, ' is sum')
+
+
+
+    numpy_design()
+
+    plot_examples()
+
+    numpy_design()
 
 
 
