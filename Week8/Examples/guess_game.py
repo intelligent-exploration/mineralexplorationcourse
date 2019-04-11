@@ -26,6 +26,30 @@ def speed_function_one(speed):
     print " you. have to pay a fine"
 
 
+def speed_function_two(speed):
+
+  
+
+  if speed < 80:
+    print " speed is ok"
+  elif (speed >= 80) and (speed < 100):
+    base_fine = 200
+    speed_diff = speed - 80
+    extra_fine = speed_diff * 10
+    total_fine = extra_fine + base_fine 
+    print " fine of  ", total_fine
+
+  elif (speed >= 100) and (speed < 140):
+    print " fine of 600 AUD"
+  else:
+    print " time to go to prison. "
+
+
+
+
+
+
+
 
 def guess_function(n):
 
@@ -58,7 +82,7 @@ def main():
     speed = int(input("Enter speed "))
     
 
-    speed_function_one(speed)
+    speed_function_two(speed)
 
 
 
