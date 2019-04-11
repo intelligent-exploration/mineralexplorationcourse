@@ -105,6 +105,9 @@ Python lists, 2d arrays and numpy arrays
  * https://www.tutorialspoint.com/numpy/index.htm
  * https://matplotlib.org/tutorials/introductory/pyplot.html
  * https://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html 
+ * https://www.ict.social/python/basics/multidimensional-lists-in-python
+ * https://matplotlib.org/gallery/images_contours_and_fields/image_annotated_heatmap.html
+ 
  * [Class exercise and examples ](Week7/exercise)
 
 # Week 8
