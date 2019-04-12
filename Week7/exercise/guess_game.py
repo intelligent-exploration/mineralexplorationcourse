@@ -111,10 +111,16 @@ def load_file(filename):
 
   plt.imshow(data_load, cmap='hot', interpolation='nearest')
   plt.savefig('design_magic.png')
-
   plt.clf() # make sure you have this in all plots
 
   #https://matplotlib.org/gallery/images_contours_and_fields/image_annotated_heatmap.html
+
+  data_tras = np.transpose(data_load)
+
+
+  plt.imshow(data_tras, cmap='hot', interpolation='nearest')
+  plt.savefig('design_magic_traspose.png')
+  plt.clf() # make sure you have this in all plots
  
   
         
