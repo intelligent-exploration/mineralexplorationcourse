@@ -100,6 +100,19 @@ def numpy_design(filename):
   np.savetxt('mymagic.csv', double_mat, delimiter = ',',  fmt='%1.2f' )
   np.savetxt('mymagic_fmt.csv', double_mat, delimiter = ',',  fmt='%1.5f' )
 
+def advanced_numpy():
+
+  #https://docs.scipy.org/doc/numpy/reference/generated/numpy.vstack.html
+
+  a = np.array([1, 2, 3])
+  b = np.array([2, 3, 4])
+
+  vertical_stack = np.vstack((a,b))
+  print(vertical_stack, '  vertical_stack')
+
+  horizontal_stack = np.hstack((a,b))
+  print(horizontal_stack, '  horizontal_stack')
+
   #print(double_mat)
 
 def load_file(filename):
@@ -230,6 +243,8 @@ def main():
     plot_examples()
 
     load_file(filename)
+
+    advanced_numpy()
 
 
 
