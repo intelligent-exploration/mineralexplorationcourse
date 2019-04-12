@@ -105,6 +105,8 @@ def numpy_design(filename):
 
 def nested_loops():
 
+  print(' nested loops function')
+
 
 
   #https://www.ict.social/python/basics/multidimensional-lists-in-python
@@ -113,14 +115,19 @@ def nested_loops():
   width = 4
   height = 5
 
+  two_dimen = np.zeros((length, width))
+
   three_dimen = np.zeros((length, width, height))
+
+  print(two_dimen)
 
   print(three_dimen)
 
-  for i in range(1,4):
-    for j in range(1,4):
-      x = i*j
-      print (x)  # end refers new line 
+  for i in range(length):
+    for j in range(width):
+      two_dimen[i,j] = i*j
+
+  print (two_dimen)  
 
       #print (k, end =' ')  # end refers new line
   print (' 3 nested ')
