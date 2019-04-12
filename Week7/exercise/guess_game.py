@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import random
 
 
-import sys  # for end or endline in nested food loops
+import sys  # for end or endline in nested food loops, python 3
 
 pi = 3.14 # global variable 
 

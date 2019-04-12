@@ -107,10 +107,15 @@ Python lists, 2d arrays and numpy arrays
  * https://docs.scipy.org/doc/numpy/reference/generated/numpy.savetxt.html 
  * https://www.ict.social/python/basics/multidimensional-lists-in-python
  * https://matplotlib.org/gallery/images_contours_and_fields/image_annotated_heatmap.html
- 
+
  * [Class exercise and examples ](Week7/exercise)
 
 # Week 8
+
+Intro to ML
+
+* https://www.geeksforgeeks.org/learning-model-building-scikit-learn-python-machine-learning-library/
+
 A Python introduction leading into visualising geo-spatial data.
 * [An Introduction to Python for GIS](Week8/Intro_Python_Geo.ipynb)
 
