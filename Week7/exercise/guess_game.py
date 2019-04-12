@@ -11,6 +11,9 @@ import matplotlib.pyplot as plt
 
 import random
 
+
+import sys  # for end or endline in nested food loops
+
 pi = 3.14 # global variable 
 
 def plot_examples():
@@ -99,6 +102,44 @@ def numpy_design(filename):
   np.savetxt(filename, double_mat, delimiter = ' ',  fmt='%1.2f' )
   np.savetxt('mymagic.csv', double_mat, delimiter = ',',  fmt='%1.2f' )
   np.savetxt('mymagic_fmt.csv', double_mat, delimiter = ',',  fmt='%1.5f' )
+
+def nested_loops():
+
+
+
+  #https://www.ict.social/python/basics/multidimensional-lists-in-python
+
+  length = 4
+  width = 4
+  height = 5
+
+  three_dimen = np.zeros((length, width, height))
+
+  print(three_dimen)
+
+  for i in range(1,4):
+    for j in range(1,4):
+      x = i*j
+      print (x)  # end refers new line 
+
+      #print (k, end =' ')  # end refers new line
+  print (' 3 nested ')
+  for i in range(1,4):
+    for j in range(1,4):
+      for k in range(1,4):
+        z = i*j * k
+        print (z)  # end refers new line 
+
+  print (' 3 nested save to np array ')
+
+  for i in range(length):
+    for j in range(width):
+      for k in range(height):
+        three_dimen[i,j,k] = i*j * k
+  print(three_dimen)
+
+  #operations to select parts of 2d array
+         
 
 def advanced_numpy():
 
@@ -286,6 +327,8 @@ def main():
     load_file(filename)
 
     advanced_numpy()
+
+    nested_loops()
 
 
 
