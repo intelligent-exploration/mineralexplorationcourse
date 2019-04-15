@@ -111,15 +111,29 @@ def nested_loops():
 
   #https://www.ict.social/python/basics/multidimensional-lists-in-python
 
-  length = 4
+  length = 3
   width = 4
-  height = 5
+  height = 3
 
-  two_dimen = np.zeros((length, width))
+  two_dimen = np.random.rand(length, width)
+
+
+  print(two_dimen)
+
+  first_row = two_dimen[0,:]
+
+  second_col =   two_dimen[:,1]
+
+
+  
+
+  print(first_row, ' first_row') 
+
+
+  print(second_col, ' second_col') 
 
   three_dimen = np.zeros((length, width, height))
 
-  print(two_dimen)
 
   print(three_dimen)
 
@@ -131,9 +145,9 @@ def nested_loops():
 
       #print (k, end =' ')  # end refers new line
   print (' 3 nested ')
-  for i in range(1,4):
-    for j in range(1,4):
-      for k in range(1,4):
+  for i in range(1,3):
+    for j in range(1,3):
+      for k in range(1,3):
         z = i*j * k
         print (z)  # end refers new line 
 
