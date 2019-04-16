@@ -112,9 +112,20 @@ Python lists, 2d arrays and numpy arrays
 
 # Week 8
 
-Intro to ML
+## Intro to ML
+
+* General Intro to ML: https://www.seas.upenn.edu/~cis519/fall2017/lectures/01_introduction.pdf
+
+* Linear regression: https://www.datacamp.com/community/tutorials/essentials-linear-regression-python https://www.youtube.com/watch?v=zPG4NjIkCjc
+
+* Gradient descent: https://en.wikipedia.org/wiki/Gradient_descent https://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html
+
+* Logistic regression: https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc
+* https://github.com/SSaishruthi/LogisticRegression_Vectorized_Implementation
 
 * https://www.geeksforgeeks.org/learning-model-building-scikit-learn-python-machine-learning-library/
+
+## Python for GIS
 
 A Python introduction leading into visualising geo-spatial data.
 * [An Introduction to Python for GIS](Week8/Intro_Python_Geo.ipynb)
