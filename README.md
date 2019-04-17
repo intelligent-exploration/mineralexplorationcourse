@@ -122,7 +122,7 @@ https://www.youtube.com/watch?v=zPG4NjIkCjc https://www.youtube.com/watch?v=JvS2
 * Gradient descent: https://en.wikipedia.org/wiki/Gradient_descent https://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html
 
 * Logistic regression: https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc
-* https://www.kaggle.com/emilyhorsman/basic-logistic-regression-with-numpy https://www.youtube.com/watch?v=yIYKR4sgzI8 https://www.youtube.com/watch?v=yIYKR4sgzI8&t=58s https://www.cc.gatech.edu/~bboots3/CS4641-Fall2016/Lectures/Lecture6.pdf
+* https://www.kaggle.com/emilyhorsman/basic-logistic-regression-with-numpy https://medium.com/@martinpella/logistic-regression-from-scratch-in-python-124c5636b8ac https://www.youtube.com/watch?v=yIYKR4sgzI8 https://www.youtube.com/watch?v=yIYKR4sgzI8&t=58s https://www.cc.gatech.edu/~bboots3/CS4641-Fall2016/Lectures/Lecture6.pdf
 
 * https://www.geeksforgeeks.org/learning-model-building-scikit-learn-python-machine-learning-library/
 

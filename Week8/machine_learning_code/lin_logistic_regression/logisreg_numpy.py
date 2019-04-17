@@ -93,11 +93,11 @@ def main():
     print(preds)
 
 
-    #coefficients = model.intercept_, model.coef_
+    coefficients = model.theta
 
 
 
-    #print(coefficients, ' coefficients')
+    print(coefficients, ' coefficients')
 
 
 
