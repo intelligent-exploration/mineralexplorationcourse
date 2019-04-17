@@ -114,14 +114,15 @@ Python lists, 2d arrays and numpy arrays
 
 ## Intro to ML
 
-* General Intro to ML: https://www.seas.upenn.edu/~cis519/fall2017/lectures/01_introduction.pdf
+* General Intro to ML: https://www.seas.upenn.edu/~cis519/fall2017/lectures/01_introduction.pdf https://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html
 
-* Linear regression: https://www.datacamp.com/community/tutorials/essentials-linear-regression-python https://www.youtube.com/watch?v=zPG4NjIkCjc
+* Linear regression: https://www.datacamp.com/community/tutorials/essentials-linear-regression-python https://www.cs.toronto.edu/~frossard/post/linear_regression/
+https://www.youtube.com/watch?v=zPG4NjIkCjc https://www.youtube.com/watch?v=JvS2triCgOY Mean squared error https://www.youtube.com/watch?v=r-txC-dpI-E
 
 * Gradient descent: https://en.wikipedia.org/wiki/Gradient_descent https://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html
 
 * Logistic regression: https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc
-* https://github.com/SSaishruthi/LogisticRegression_Vectorized_Implementation
+* https://www.kaggle.com/emilyhorsman/basic-logistic-regression-with-numpy https://www.youtube.com/watch?v=yIYKR4sgzI8 https://www.youtube.com/watch?v=yIYKR4sgzI8&t=58s https://www.cc.gatech.edu/~bboots3/CS4641-Fall2016/Lectures/Lecture6.pdf
 
 * https://www.geeksforgeeks.org/learning-model-building-scikit-learn-python-machine-learning-library/
 
