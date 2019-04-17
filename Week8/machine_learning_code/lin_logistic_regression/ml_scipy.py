@@ -89,7 +89,7 @@ def logistic_reg_scipy(x_train, x_test, y_train, y_test):
     r_score = logistic.score(x_test, y_test)  # Explained variance score: 1 is perfect prediction
                                                   # and 0 means that there is no linear relationshipbetween X and y.
 
-    print(r_score, 'is R score')
+    print(r_score, 'is R score') # https://www.dummies.com/education/math/statistics/how-to-interpret-a-correlation-coefficient-r/
 
 
 def neuralnet_scipy():
@@ -99,10 +99,9 @@ def neuralnet_scipy():
     iris = datasets.load_iris() # https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
 
     data_input = iris.data[:, np.newaxis, 2]  
+    y = iris.target  
 
-    y = iris.target 
-
-    
+    # process data
 
     x_train, x_test, y_train, y_test = train_test_split(data_input, y, test_size = 0.20) 
 
@@ -117,12 +116,8 @@ def neuralnet_scipy():
     x_test = scaler.transform(x_test)
 
     print x_test, ' after scaled' 
-
-
-     
-    #fnn = clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1)
-    #fnn.fit(x_train, y_train) 
-
+ 
+    # time for training and testing nn model
     fnn = MLPClassifier(hidden_layer_sizes=(10, 5), max_iter=1000)  
     fnn.fit(x_train, y_train ) 
 
