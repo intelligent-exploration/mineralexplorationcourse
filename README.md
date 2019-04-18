@@ -22,7 +22,7 @@ We need two different environments. One is particularly needed for pyGplates. We
 Once Conda is installed, to create the environment to work in use:
 
 ```
-conda create -n pyGEOL scipy=1.2 scikit-learn=0.20 matplotlib=3.0 pyshp=2.0 numpy=1.16 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4
+conda create -n pyGEOL scipy=1.2 scikit-learn=0.20 matplotlib=3.0 pyshp=2.0 numpy=1.16 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4 git
 ```
 
 Then to activate and run the notebooks, invoke:
