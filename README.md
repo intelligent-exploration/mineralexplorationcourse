@@ -149,4 +149,8 @@ This is an in-depth exploration linking some of the earlier workflows. This note
 # Assessment
 1) Pass/Fail. The 3 notebooks from week 8 and 9  contain a specific assessment at the end. Complete the task and show your tutor. 
 
-2) 10%. Choose one of the datasets and key figures from the workbooks of week 7 and 8 to write up as a full paper-style report. This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the Jupyter notebook environment. This is due at the start of the Week 9 lecture, i.e. Thursday May 2, 2019 10am.
+2) 10%. Choose **one (1)** of the datasets and key figures from the workbooks of week 8 and 9 to write up as a full paper-style report (e.g. Intro_Python_Geo.ipynb, PandasExamples.ipynb, OR ML_Geo.ipynb). This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the Jupyter notebook environment. Take  **Due: the start of the Week 11 lecture, i.e. Thursday 16th May 2019 10am**
+
+3) 25%. Group Assignment. Project details to be given. **Due: start of Week 13 lecture, i.e Thursday 30th May 2019 10am**
+
+3) 15%. Group Presentation. Presentation of project. **Held in Week 13 lecture and prac time, i.e Thursday 30th May 2019 10am-4pm.**
