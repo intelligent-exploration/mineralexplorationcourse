@@ -396,7 +396,7 @@ andeanOut.close()
 
 
 #Now make a set of "non-deposits" using a random formation age
-randomAges=numpy.random.randint(0,230,size=len(sampleData))
+randomAges=numpy.random.randint(1,230,size=len(sampleData))
 
 
 # In[21]:
