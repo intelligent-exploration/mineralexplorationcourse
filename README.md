@@ -31,7 +31,7 @@ conda activate pyGEOL
 jupyter notebook
 ```
 
-### python 2 pyGplates environment (week 9)
+### python 2 pyGplates environment (week 10)
 
 ***python 2 specifically is required for the week 9 notebook only because of the pygplates dependency.***
 
