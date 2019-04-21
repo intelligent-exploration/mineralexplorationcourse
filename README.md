@@ -1,5 +1,5 @@
 # GEOL3888 Economic Geology
-This repository comprises the work required for Prac classes from Week 6, 7, 8, and 9.
+This repository comprises the work required for Prac classes from Week 6, 7, 8, 9, and 10.
 Modern day exploration requires a versatile skill-set, including being able to analyse, visualise and interpret data. This section of the course should give you hard-skills in the Python programming language. Plus you will learn about Machine Learning, Plate Tectonic Reconstructions, all while using specific Python packages (numpy, scipy, scikit-learn, matplotlib, cartopy, pygplates, etc), and a few other data and research tools and environments (e.g. Git, GPlates, databases, Docker containers).
 
 The prac classes are compulsory. And the assessment will be a write-up of one of the pracs. More details given in the assessment section.
@@ -18,11 +18,11 @@ or....
 ## Create the python environment locally
 We need two different environments. One is particularly needed for pyGplates. We are using the conda package manager. Conda is installed on the computers in the lab. If you wish you use your own computer you can download it from https://repo.continuum.io/miniconda/ 
 
-### python 3 environment (week 7 and 8)
+### python 3 environment (week 8 and 9)
 Once Conda is installed, to create the environment to work in use:
 
 ```
-conda create -n pyGEOL scipy=1.2 scikit-learn=0.20 matplotlib=3.0 pyshp=2.0 numpy=1.16 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4 git
+conda create -n pyGEOL python=3.7 scipy=1.2 scikit-learn=0.20 matplotlib=3.0 pyshp=2.0 numpy=1.16 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4 git
 ```
 
 Then to activate and run the notebooks, invoke:
@@ -141,16 +141,18 @@ Then a deeper lesson exploring some new Python libraries and advanced features o
 We will use Python to perform machine learning on a well-constructed dataset 
 * [Machine Learning with Python for Geoscience](Week9/ML_Geo.ipynb)
 
-This is an in-depth exploration linking some of the earlier workflows. This notebook will teach you how to to create and manipulate data, use python from outside of Jupyter (i.e. normal python), and to use bespoke Python packages (pygplates and build-your-own). This task can be expanded to your full project assessment if chosen.
-
 # Week 10
+
+This is an in-depth exploration linking some of the earlier workflows. These notebooks and workflows will teach you how to to create and manipulate data, use python from outside of Jupyter (i.e. normal python), and to use bespoke Python packages (pygplates and build-your-own). This task can be expanded to your full project assessment if chosen.
+
+* [Porphyry Copper Deposits in the Andes](Week10/)
 
 
 # Assessment
 1) Pass/Fail. The 3 notebooks from week 8 and 9  contain a specific assessment at the end. Complete the task and show your tutor. 
 
-2) 10%. Choose **one (1)** of the datasets and key figures from the workbooks of week 8 and 9 to write up as a full paper-style report (e.g. Intro_Python_Geo.ipynb, PandasExamples.ipynb, OR ML_Geo.ipynb). This should include a short abstract, a methods sections, and an interpretation of the results. You can do this all within the Jupyter notebook environment. Take  **Due: the start of the Week 11 lecture, i.e. Thursday 16th May 2019 10am**
+2) 10%. Choose **one (1)** of the datasets and key figures from the workbooks of week 8 and 9 to write up as a full paper-style report (e.g. Intro_Python_Geo.ipynb, PandasExamples.ipynb, OR ML_Geo.ipynb). This should include a short abstract, a methods sections, and an interpretation of the results and any insights you can make about the data. You can do this all within the Jupyter notebook environment - approx 4 pages max INCLUDING figures and NOT counting code (but please include your code, especially any comments you make to exisiting code).  **Due: the start of the Week 11 lecture, i.e. Thursday 16th May 2019 10am**
 
-3) 25%. Group Assignment. Project details to be given. **Due: start of Week 13 lecture, i.e Thursday 30th May 2019 10am**
+3) 25%. Group Assignment. Project details to be given. Possible project ideas will be running the Week 10 workflow on different data sets. Discuss your project with your tutor. **Due: start of Week 13 lecture, i.e Thursday 30th May 2019 10am**
 
-3) 15%. Group Presentation. Presentation of project. **Held in Week 13 lecture and prac time, i.e Thursday 30th May 2019 10am-4pm.**
+3) 15%. Group Presentation. Presentation of project. All members are encouraged to present! **Held in Week 13 lecture and prac time, i.e Thursday 30th May 2019 10am-4pm.**
