@@ -33,7 +33,7 @@ jupyter notebook
 
 ### python 2 pyGplates environment (week 10)
 
-***python 2 specifically is required for the week 9 notebook only because of the pygplates dependency.***
+***python 2 specifically is required for the week 10 notebook only because of the pygplates dependency.***
 
 Note: Windows users before creating your conda environment you will need to set
 ```
