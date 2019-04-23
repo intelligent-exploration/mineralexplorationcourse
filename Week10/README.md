@@ -1,4 +1,4 @@
-# Machine learning to classify ore deposits from tectonmagmatic properties
+# Machine learning to classify ore deposits from tectonomagmatic properties
 
 This repo is an example of how machine learning can be used to find Porphyry Copper deposits in the Andes. Modified from the workflows of Butterworth, N., D. Steinberg, R. D. Müller, S. Williams, A. S. Merdith, and S. Hardy (2016), Tectonic environments of South American porphyry copper magmatism through time revealed by spatiotemporal data mining, Tectonics, 35, 2847–2862, doi:10.1002/2016TC004289
 
@@ -26,14 +26,14 @@ Unzip the download into the Week 10 folder. The Week 10 Folder should contain th
 
 **coregLoop.ipynb** - same as above, but in notebook format.
 
-**Muller_copper_prob.ipynb** - a python noebook that steps through the machine learning process.
+**Muller_copper_prob.ipynb** - a python notebook that steps through the machine learning process.
 
 **Utils_coreg.py** - Some additional tools and functions called in the main scripts.
 
 
-## Python environemnt 
+## Python environment 
 
-Create and activate the required conda environemnt:
+Create and activate the required conda environment:
 
 ```
 conda create -n py2GEOL -y python=2.7 scipy=1.2 scikit-learn=0.20 matplotlib=2.0 pyshp=1.2 numpy=1.15 jupyter=1.0 cartopy=0.17 pandas=0.24 notebook=5.7.4
@@ -67,7 +67,7 @@ sudo docker run  -p 8888:8888 -it --rm -v`pwd`:/workspace pyg /bin/bash -c "sour
 
 ## Step 1, get plate kinematic data
 
-Run the ***convergence.py*** script from a bash terminal shell. This script calculates convergence rates and other kinemtics about the plate model along the subduction boundaries. To run this script you need to specify a rotation file, left- and right-handed subduction zone topology files, a closed plate polygon file, and a time. We want to calculate kinematic data for the entire history of the plate model, so we can do this in a small bash script:
+Run the ***convergence.py*** script from a bash terminal shell. This script calculates convergence rates and other kinematics about the plate model along the subduction boundaries. To run this script you need to specify a rotation file, left- and right-handed subduction zone topology files, a closed plate polygon file, and a time. We want to calculate kinematic data for the entire history of the plate model, so we can do this in a small bash script:
 
 ```
 cd Week10/
@@ -75,14 +75,14 @@ cd Week10/
 for age in {0..230}; do echo ${age};  python convergence.py Muller_gplates/Global_EarthByte_230-0Ma_GK07_AREPS.rot Muller_export/topology_subduction_boundaries_sL_${age}.00Ma.shp Muller_export/topology_subduction_boundaries_sR_${age}.00Ma.shp Muller_export/topology_platepolygons_${age}.00Ma.shp ${age}; done
 ```
 
-This will create a bunch of files in called ***subStats_XX.csv*** that contain the statistcs of the subduction zones (i.e. the kinemtatic data). See the comments in ***convergence.py*** to see exactly what is output. These will be dumped in the top-level directory, so let's move them to a folder:
+This will create a bunch of files in called ***subStats_XX.csv*** that contain the statistics of the subduction zones (i.e. the kinematic data). See the comments in ***convergence.py*** to see exactly what is output. These will be dumped in the top-level directory, so let's move them to a folder:
 ```
 mv subStats*.csv Muller_convergence/
 ```
 
 ## Step 2, coregister the kinematic data with ore deposit data
 
-The folder ***CopperDeposits*** contains a shapefile ***XYBer14_t2_ANDES.shp*** with a set of known copper deposits in the Andes. These are currently just points on a map with a formation age associated with them. Our ultimate goal is to identify what kind of tectonomagmatic environemnts are associated with the formation of these ore deposits, to begin to do this we first must link age-coded tectonomagmatic properties with our age-coded ore deposits. We can use the script ***coregLoop.py*** to achieve this!
+The folder ***CopperDeposits*** contains a shapefile ***XYBer14_t2_ANDES.shp*** with a set of known copper deposits in the Andes. These are currently just points on a map with a formation age associated with them. Our ultimate goal is to identify what kind of tectonomagmatic environments are associated with the formation of these ore deposits, to begin to do this we first must link age-coded tectonomagmatic properties with our age-coded ore deposits. We can use the script ***coregLoop.py*** to achieve this!
 
 Run the script coregLoop.py
 
@@ -98,12 +98,12 @@ This creates three datasets (in the python 'pickle' file format) which contain t
 
 ***Muller_Bertrand_coregistered_random.pkl*** contains a psudeo-random set of non-deposits with known tectono-magmatic properties that can be used for training.
 
-***Muller_Bertrand_coregistered_sampleMuller0.pkl*** contains a set of points following the present day South American subduction zone and the correspoiding tectono-magmatic properites of those points. 
+***Muller_Bertrand_coregistered_sampleMuller0.pkl*** contains a set of points following the present day South American subduction zone and the corresponding tectono-magmatic properties of those points. 
 
 
 ## Step 3, apply machine learning algorithms to find significant associations
 
-Open up Muller_copper_prob.ipynb in a jupyter notebook and continue the intereactive analysis in there.
+Open up Muller_copper_prob.ipynb in a Jupyter notebook and continue the interactive analysis in there.
 
 
 ## Additional instructions to create different datasets.
