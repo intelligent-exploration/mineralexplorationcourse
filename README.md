@@ -140,6 +140,8 @@ Then a deeper lesson exploring some new Python libraries and advanced features o
 
 We will use Python to perform machine learning on a well-constructed dataset 
 * [Machine Learning with Python for Geoscience](Week9/ML_Geo.ipynb)
+* Random forest background: https://medium.com/@williamkoehrsen/random-forest-simple-explanation-377895a60d2d 
+* Random forest code: https://www.datascience.com/resources/notebooks/random-forest-intro
 
 # Week 10
 
