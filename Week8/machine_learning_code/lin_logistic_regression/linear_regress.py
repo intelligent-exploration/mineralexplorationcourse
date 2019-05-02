@@ -19,6 +19,8 @@ import random
 #https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html
 #https://www.cs.toronto.edu/~frossard/post/linear_regression/
 
+#https://en.wikipedia.org/wiki/Dot_product
+
 
 
 
