@@ -149,6 +149,12 @@ This is an in-depth exploration linking some of the earlier workflows. These not
 
 * [Porphyry Copper Deposits in the Andes](Week10/)
 
+# Week 11
+
+* Github tutorial: https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+* Video tutorial: https://www.youtube.com/watch?v=0fKg7e37bQE&t=523s
+* Gitkraken Software tutorial: https://www.youtube.com/watch?v=ub9GfRziCtU
+
 
 # Assessment
 1) Pass/Fail. The 3 notebooks from week 8 and 9  contain a specific assessment at the end. Complete the task and show your tutor. 
@@ -159,3 +165,6 @@ This is an in-depth exploration linking some of the earlier workflows. These not
 **Due: start of Week 13 Prac, i.e Thursday 30th May 2019 1pm**
 
 3) 15%. Group Presentation. Presentation of project. We want to know about the project you did! Max 20 minute presentation. With questions to follow. All members are encouraged to present (your presentation mark will be based on the strongest speaker, so this is great practice for presenting your work). **Held in Week 13 prac time, i.e Thursday 30th May 2019 1pm-4pm.**
+
+
+
