@@ -155,6 +155,13 @@ This is an in-depth exploration linking some of the earlier workflows. These not
 * Video tutorial: https://www.youtube.com/watch?v=0fKg7e37bQE&t=523s
 * Gitkraken Software tutorial: https://www.youtube.com/watch?v=ub9GfRziCtU
 
+# Week 13
+
+* https://www.waikato.ac.nz/library/study/guides/write-scientific-reports
+* https://writingcenter.unc.edu/tips-and-tools/scientific-reports/
+* http://www.lcc.uma.es/~eat/pdf/sw.pdf
+* [Evaluation criteria for presentation](Week13/)
+
 
 # Assessment
 1) Pass/Fail. The 3 notebooks from week 8 and 9  contain a specific assessment at the end. Complete the task and show your tutor. 
